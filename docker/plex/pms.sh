@@ -3,7 +3,7 @@
 #  Get a claim token at
 #  https://www.plex.tv/claim
 
-# id 'whoami' to get UID and GID, used for drive access rights
+# "id 'whoami'" to get UID and GID, used for drive access rights
 
 # Examples:
 # 1 media drive: /mnt/drive
@@ -16,4 +16,4 @@ sudo chmod 777 /plxData
 sudo chmod 777 /plxData/*
 mkdir /plxData/db
 mkdir /plxData/transcode
-docker run -d --name plex-ms --network=host -e PLEX_CLAIM="$2" -e PLEX_UID="$3" -e PLEX_GID="$4" -v /plxData/db:/config -v /plxData/transcode:/transcode -v "$1":/data plexinc/pms-docker
+docker run -d --name plex-ms --restart=always --network=host -e PLEX_CLAIM="$2" -e PLEX_UID="$3" -e PLEX_GID="$4" -v /plxData/db:/config -v /plxData/transcode:/transcode -v "$1":/data plexinc/pms-docker
