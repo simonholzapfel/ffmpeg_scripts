@@ -2,4 +2,4 @@
   A collection of useful scripts.
 
 # Attention
-  Please keep in mind, most of them are crappy and are just enough for my use cases.
+  Please keep in mind, most of these scripts are barely enough for my usecases and can change anytime.
