@@ -1,0 +1,1 @@
+ffmpeg -vsync 0 -hwaccel cuvid -c:v h264_cuvid -i '.\Die Schlümpfe.mkv' -map 0 -c copy -c:a aac -c:v hevc_nvenc -q:v 36 out.mkv
