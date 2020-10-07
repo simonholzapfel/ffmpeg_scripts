@@ -8,7 +8,6 @@
 # $2 claim token: claim-...
 
 docker run -d --name plex-ms \
- --restart=always \
  --network=host \
  -e PLEX_CLAIM="$2" \
  -v plex_db:/config -v plex_transcode:/transcode -v "$1":/data \
