@@ -39,7 +39,7 @@ legend{border:0;padding:0}
 button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
 button,input{line-height:normal}
 button,select{text-transform:none}
-button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor18:pointer}
 button[disabled],html input[disabled]{cursor:default}
 input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
@@ -507,7 +507,7 @@ So we need to create the image ourselves (locally) to be able to use it.</p>
 <p>Next we need to download the Oracle XE binaries: <a href="https://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html"><del>Oracle Latest XE Download</del></a> <a href="https://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/xe-prior-releases-5172097.html">Oracle Old XE Download</a> (the Linux x64 file, latest version not yet supported and yes you need an Oracle account)</p>
 </li>
 <li class="data-line-27">
-<p>Copy the downloaded file (do not extract) to '/oracletemp/docker-images/OracleDatabase/SingleInstance/dockerfiles/18.3.0'</p>
+<p>Copy the downloaded file (do not extract) to 'docker-images/OracleDatabase/SingleInstance/dockerfiles/11.2.0.2'</p>
 </li>
 <li class="data-line-28">
 <p>Build the Docker image using the provided script (folder 'dockerfiles'): <code>sudo ./buildDockerImage.sh -v 11.2.0.2 -x -i</code></p>
